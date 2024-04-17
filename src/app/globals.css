@@ -31,3 +31,17 @@ body {
     text-wrap: balance;
   }
 }
+
+.main-container {
+  width: 393px;
+  height: 716px;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.main-container2 {
+  width: 393px;
+  height: 716px;
+  background-color: #fafafa;
+  color: #000000;
+}
