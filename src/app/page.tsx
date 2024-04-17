@@ -5,6 +5,9 @@ import VerityEmailPage from "./components/verify-email-page/VerityEmailPage";
 import ContinuePage from "./components/continue-page/ContinuePage";
 import SessionCreation from "./components/sessions-creation-page/SessionCreation";
 import SessionSubcriptionPage from "./components/session-subscription-page/SessionSubcriptionPage";
+import ModeratorPage from "./components/moderator-page/ModeratorPage";
+import Worktime from "./components/worktime-page/Worktime";
+import JoiningPage from "./components/joining-page/JoiningPage";
 
 export default function Home() {
   return (
@@ -14,7 +17,10 @@ export default function Home() {
       {/* <VerityEmailPage /> */}
       {/* <ContinuePage /> */}
       {/* <SessionCreation /> */}
-      <SessionSubcriptionPage />
+      {/* <SessionSubcriptionPage /> */}
+      {/* <ModeratorPage /> */}
+      <Worktime />
+      {/* <JoiningPage /> */}
     </main>
   );
 }
