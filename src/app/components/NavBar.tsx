@@ -6,7 +6,7 @@ const NavBar = () => {
       className=""
       style={{
         position: "absolute",
-        top: "673px",
+        top: "680px",
         display: "flex",
         flexDirection: "row",
         justifyContent: "space-between",
