@@ -1,10 +1,1 @@
-<svg width="188" height="191" viewBox="0 0 188 191" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g id="Done outline" clip-path="url(#clip0_221_10796)">
-<path id="Vector" d="M154.865 40.0304L165.832 51.172L66.035 152.561L22.1683 107.995L33.135 96.8529L66.035 130.278L154.865 40.0304ZM154.865 17.5083L66.035 107.756L33.135 74.3308L0 107.995L66.035 175.083L188 51.172L154.865 17.5083Z" fill="black"/>
-</g>
-<defs>
-<clipPath id="clip0_221_10796">
-<rect width="188" height="191" fill="white"/>
-</clipPath>
-</defs>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="188" height="191" fill="none" viewBox="0 0 188 191"><g id="Done outline" clip-path="url(#clip0_221_10796)"><path id="Vector" fill="#000" d="M154.865 40.0304L165.832 51.172L66.035 152.561L22.1683 107.995L33.135 96.8529L66.035 130.278L154.865 40.0304ZM154.865 17.5083L66.035 107.756L33.135 74.3308L0 107.995L66.035 175.083L188 51.172L154.865 17.5083Z"/></g><defs><clipPath id="clip0_221_10796"><rect width="188" height="191" fill="#fff"/></clipPath></defs></svg>
