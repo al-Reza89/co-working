@@ -7,7 +7,13 @@ import NavBar from "../NavBar";
 const HomePage = () => {
   return (
     <div className="main-container">
-      <div className="flex flex-col justify-center items-center relative">
+      <div
+        className="flex flex-col justify-center items-center relative"
+        style={{
+          position: "relative",
+          right: "0",
+        }}
+      >
         <Images />
         <HomeText />
         <Button />

@@ -7,7 +7,13 @@ import NavBar from "../NavBar";
 const ModeratorPage = () => {
   return (
     <div className="main-container2">
-      <div className="relative " style={{}}>
+      <div
+        className="relative "
+        style={{
+          position: "relative",
+          right: "0",
+        }}
+      >
         <Header />
         <ModeratorDescription />
         <Settings />

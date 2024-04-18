@@ -1,7 +1,10 @@
+"use client";
+import { useRouter } from "next/navigation";
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 
 const StartSession = () => {
+  const router = useRouter();
   return (
     <div
       style={{
@@ -36,7 +39,7 @@ const StartSession = () => {
             color: "rgba(0, 0, 0, 1)",
             padding: "10px",
             fontFamily: "Poppins",
-            fontSize: "20px",
+            fontSize: "16px",
             display: "flex",
             flexDirection: "column",
             gap: "5px",
@@ -165,6 +168,7 @@ const StartSession = () => {
         </div>
       </div>
       <button
+        onClick={() => router.push("/moderator-page")}
         style={{
           height: "70px",
           width: "303px",

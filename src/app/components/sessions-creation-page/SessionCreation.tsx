@@ -8,7 +8,13 @@ import NavBar from "../NavBar";
 const SessionCreation = () => {
   return (
     <div className="main-container2">
-      <div className="relative ">
+      <div
+        className="relative "
+        style={{
+          position: "relative",
+          right: "0",
+        }}
+      >
         <Header />
         <Logo />
         <ActiveMember />

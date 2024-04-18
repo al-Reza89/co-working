@@ -6,7 +6,13 @@ import NavBar from "../NavBar";
 const Worktime = () => {
   return (
     <div className="main-container2">
-      <div className="relative " style={{}}>
+      <div
+        className="relative "
+        style={{
+          position: "relative",
+          right: "0",
+        }}
+      >
         <Header />
         <WorktimeContent />
         <NavBar />

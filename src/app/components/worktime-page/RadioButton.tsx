@@ -1,11 +1,23 @@
+"use client";
 /* eslint-disable @next/next/no-img-element */
+import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 
-const RadioButton = () => {
+interface ButtonProps {
+  routePage?: boolean;
+}
+
+const RadioButton: React.FC<ButtonProps> = ({ routePage }) => {
+  const router = useRouter();
   const [selectedOption, setSelectedOption] = useState("focus");
 
   const handleOptionChange = (option: any) => {
     setSelectedOption(option);
+    if (option === "focus" && routePage) {
+      router.push("/meeting-page");
+    } else if (option === "break" && routePage) {
+      router.push("/feedback-page");
+    }
   };
 
   return (
@@ -22,7 +34,6 @@ const RadioButton = () => {
           top: "440px",
           display: "flex",
           flexDirection: "row",
-          justifyContent: "center",
           gap: "60px",
         }}
       >
@@ -32,8 +43,12 @@ const RadioButton = () => {
             flexDirection: "row",
             alignItems: "center",
             gap: "5px",
-            padding: "10px",
-            border: "none",
+            paddingLeft: "4px",
+            paddingRight: "10px",
+            paddingTop: "5px",
+            paddingBottom: "5px",
+            border: "1px solid rgba(14, 113, 235, 0.1)",
+            borderRadius: "10px",
           }}
           onClick={() => handleOptionChange("focus")}
         >
@@ -57,8 +72,12 @@ const RadioButton = () => {
             flexDirection: "row",
             alignItems: "center",
             gap: "5px",
-            padding: "10px",
-            border: "none",
+            paddingLeft: "4px",
+            paddingRight: "10px",
+            paddingTop: "5px",
+            paddingBottom: "5px",
+            border: "1px solid rgba(14, 113, 235, 0.1)",
+            borderRadius: "10px",
           }}
           onClick={() => handleOptionChange("break")}
         >

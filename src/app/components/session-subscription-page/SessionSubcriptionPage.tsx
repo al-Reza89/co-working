@@ -6,7 +6,13 @@ import NavBar from "../NavBar";
 const SessionSubcriptionPage = () => {
   return (
     <div className="main-container2">
-      <div className="relative ">
+      <div
+        className="relative "
+        style={{
+          position: "relative",
+          right: "0",
+        }}
+      >
         <Header />
         <SubscriptionPlan />
         <NavBar />

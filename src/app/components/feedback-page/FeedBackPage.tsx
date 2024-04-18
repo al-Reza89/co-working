@@ -1,9 +1,7 @@
 import React from "react";
-import Header from "./Header";
-import SiginUpForm from "./SiginUpForm";
-import NavBar from "../NavBar";
+import Header from "../signup-page/Header";
 
-const SignUpPage = () => {
+const FeedBackPage = () => {
   return (
     <div className="main-container2  ">
       <div
@@ -13,11 +11,9 @@ const SignUpPage = () => {
         }}
       >
         <Header />
-        <SiginUpForm />
-        <NavBar />
       </div>
     </div>
   );
 };
 
-export default SignUpPage;
+export default FeedBackPage;

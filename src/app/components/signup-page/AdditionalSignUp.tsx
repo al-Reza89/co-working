@@ -1,10 +1,15 @@
 /* eslint-disable @next/next/no-img-element */
+"use client";
+import { useRouter } from "next/navigation";
 import React from "react";
 
 const AdditionalSignUp = () => {
+  const router = useRouter();
+
   return (
     <div style={{}}>
       <button
+        onClick={() => router.push("/continue-page")}
         style={{
           position: "absolute",
           top: "429px",

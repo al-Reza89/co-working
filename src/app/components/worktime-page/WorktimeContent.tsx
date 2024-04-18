@@ -1,10 +1,12 @@
-/* eslint-disable jsx-a11y/alt-text */
 "use client";
+/* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
 import React, { useState } from "react";
 import RadioButton from "./RadioButton";
+import { useRouter } from "next/navigation";
 
 const WorktimeContent = () => {
+  const router = useRouter();
   return (
     <div
       style={{
@@ -100,6 +102,7 @@ const WorktimeContent = () => {
             }}
           >
             <div
+              onClick={() => router.push("/joining-page")}
               style={{
                 fontFamily: "Poppins",
                 fontSize: "12px",
@@ -111,6 +114,7 @@ const WorktimeContent = () => {
                 display: "flex",
                 flexDirection: "row",
                 gap: "20px",
+                cursor: "pointer",
               }}
             >
               <span

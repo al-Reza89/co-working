@@ -6,7 +6,13 @@ import NavBar from "../NavBar";
 const VerityEmailPage = () => {
   return (
     <div className="main-container">
-      <div className="relative flex flex-col justify-center items-center">
+      <div
+        className="relative flex flex-col justify-center items-center"
+        style={{
+          position: "relative",
+          right: "0",
+        }}
+      >
         <Images />
         <Verified
           title="Verify Your Email"

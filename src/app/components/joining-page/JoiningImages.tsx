@@ -79,7 +79,7 @@ const JoiningImages = () => {
             }}
           ></img>
         </div>
-        <RadioButton />
+        <RadioButton routePage={true} />
       </div>
     </div>
   );

@@ -1,8 +1,10 @@
 "use client";
 import React, { useState } from "react";
 import SettingsButton from "./SettingsButton";
+import { useRouter } from "next/navigation";
 
 const Settings = () => {
+  const router = useRouter();
   return (
     <div
       style={{
@@ -82,11 +84,12 @@ const Settings = () => {
         height="519px"
       />
       <button
+        onClick={() => router.push("/worktime-page")}
         style={{
           position: "absolute",
           top: "590px",
           height: "36px",
-          width: "251px",
+          width: "260px",
           backgroundColor: "#0E71EB",
           color: "#ffffff",
           fontFamily: "Poppins",

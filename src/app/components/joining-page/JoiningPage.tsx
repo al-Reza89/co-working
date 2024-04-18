@@ -6,7 +6,12 @@ import NavBar from "../NavBar";
 const JoiningPage = () => {
   return (
     <div className="main-container2">
-      <div className="relative " style={{}}>
+      <div
+        style={{
+          position: "relative",
+          right: "0",
+        }}
+      >
         <Header />
         <JoiningImages />
         <NavBar />

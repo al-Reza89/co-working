@@ -1,8 +1,10 @@
 "use client";
 import React, { useState } from "react";
 import AdditionalSignUp from "./AdditionalSignUp";
+import { useRouter } from "next/navigation";
 
 const SiginUpForm = () => {
+  const router = useRouter();
   const [isChecked, setIsChecked] = useState(false);
 
   const handleCheckboxChange = () => {
@@ -48,6 +50,7 @@ const SiginUpForm = () => {
         Fill the following form
       </h3>
       <form
+        onClick={() => router.push("/continue-page")}
         style={{
           display: "flex",
           flexDirection: "column",

@@ -1,12 +1,21 @@
+"use client";
 import React from "react";
 import Images from "../home-page/Images";
 import Verified from "../verified";
 import NavBar from "../NavBar";
+import { useRouter } from "next/navigation";
 
 const ContinuePage = () => {
+  const router = useRouter();
   return (
     <div className="main-container">
-      <div className="relative flex flex-col justify-center items-center">
+      <div
+        className="relative flex flex-col justify-center items-center"
+        style={{
+          position: "relative",
+          right: "0",
+        }}
+      >
         <Images />
         <Verified
           title="Successfully Verified"
@@ -14,6 +23,7 @@ const ContinuePage = () => {
         the extenstion`}
         />
         <button
+          onClick={() => router.push("/session-creation")}
           style={{
             position: "absolute",
             top: "520px",

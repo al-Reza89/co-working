@@ -1,8 +1,13 @@
+"use client";
+import { useRouter } from "next/navigation";
 import React from "react";
 
 const Button = () => {
+  const router = useRouter();
+
   return (
     <button
+      onClick={() => router.push("/signup-page")}
       style={{
         position: "absolute",
         top: "517px",

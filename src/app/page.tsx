@@ -12,14 +12,11 @@ import JoiningPage from "./components/joining-page/JoiningPage";
 export default function Home() {
   return (
     <main className="flex justify-end px-4 py-2">
-      {/* <HomePage /> */}
-      {/* <SignUpPage /> */}
-      {/* <VerityEmailPage /> */}
-      {/* <ContinuePage /> */}
+      <HomePage />
       {/* <SessionCreation /> */}
       {/* <SessionSubcriptionPage /> */}
       {/* <ModeratorPage /> */}
-      <Worktime />
+      {/* <Worktime /> */}
       {/* <JoiningPage /> */}
     </main>
   );
