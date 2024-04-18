@@ -1,5 +1,7 @@
 import React from "react";
 import Header from "../signup-page/Header";
+import FeedbackLogo from "./FeedbackLogo";
+import NavBar from "../NavBar";
 
 const FeedBackPage = () => {
   return (
@@ -11,6 +13,8 @@ const FeedBackPage = () => {
         }}
       >
         <Header />
+        <FeedbackLogo />
+        <NavBar />
       </div>
     </div>
   );

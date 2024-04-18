@@ -5,9 +5,10 @@ import React, { useState } from "react";
 
 interface ButtonProps {
   routePage?: boolean;
+  top?: string;
 }
 
-const RadioButton: React.FC<ButtonProps> = ({ routePage }) => {
+const RadioButton: React.FC<ButtonProps> = ({ routePage, top }) => {
   const router = useRouter();
   const [selectedOption, setSelectedOption] = useState("focus");
 
@@ -31,7 +32,7 @@ const RadioButton: React.FC<ButtonProps> = ({ routePage }) => {
       <div
         style={{
           position: "absolute",
-          top: "440px",
+          top: top || "440px",
           display: "flex",
           flexDirection: "row",
           gap: "60px",

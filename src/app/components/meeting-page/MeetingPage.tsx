@@ -1,5 +1,7 @@
 import React from "react";
 import Header from "../signup-page/Header";
+import MeetingImages from "./MeetingImages";
+import NavBar from "../NavBar";
 
 const MeetingPage = () => {
   return (
@@ -11,6 +13,8 @@ const MeetingPage = () => {
         }}
       >
         <Header />
+        <MeetingImages />
+        <NavBar />
       </div>
     </div>
   );
