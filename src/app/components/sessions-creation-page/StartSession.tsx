@@ -187,6 +187,7 @@ const StartSession = () => {
         Start a session
       </button>
       <button
+        onClick={() => router.push("/meeting-page")}
         style={{
           height: "70px",
           width: "303px",

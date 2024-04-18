@@ -15,7 +15,7 @@ const RadioButton: React.FC<ButtonProps> = ({ routePage, top }) => {
   const handleOptionChange = (option: any) => {
     setSelectedOption(option);
     if (option === "focus" && routePage) {
-      router.push("/meeting-page");
+      router.push("/joining-page");
     } else if (option === "break" && routePage) {
       router.push("/feedback-page");
     }

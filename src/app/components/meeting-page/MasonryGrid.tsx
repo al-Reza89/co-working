@@ -6,9 +6,9 @@ const images = [
   { url: "meeting3.png", name: "Joy" },
   { url: "meeting1.png", name: "James" },
   { url: "meeting2.png", name: "Karen A" },
-  { url: "meeting4.png", name: "Image 4" },
-  { url: "meeting4.png", name: "Image 3" },
-  { name: "Image 3" },
+  { url: "meeting4.png", name: "Karen A" },
+  { url: "meeting4.png", name: "Karen" },
+  { name: "Karen A" },
 ];
 
 const MasonryGrid = ({}) => {

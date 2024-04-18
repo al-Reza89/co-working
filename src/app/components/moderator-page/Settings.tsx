@@ -62,7 +62,7 @@ const Settings = () => {
         name1="Name"
         name2="worktime"
         icon={false}
-        height="263px"
+        height="261px"
       />
       <SettingsButton
         name1="Private"

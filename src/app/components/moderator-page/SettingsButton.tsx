@@ -24,10 +24,10 @@ const SettingsButton: React.FC<ButtonProps> = ({
     <div
       style={{
         display: "flex",
-        justifyContent: "center",
         alignItems: "center",
         position: "absolute",
         top: height,
+        left: "65px",
       }}
     >
       <div

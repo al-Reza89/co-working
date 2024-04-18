@@ -102,7 +102,6 @@ const WorktimeContent = () => {
             }}
           >
             <div
-              onClick={() => router.push("/joining-page")}
               style={{
                 fontFamily: "Poppins",
                 fontSize: "12px",
@@ -138,7 +137,7 @@ const WorktimeContent = () => {
             </div>
           </div>
         </div>
-        <RadioButton />
+        <RadioButton routePage={true} />
       </div>
     </div>
   );
