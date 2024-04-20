@@ -2,6 +2,10 @@
 import React, { useState } from "react";
 import SettingsButton from "./SettingsButton";
 import { useRouter } from "next/navigation";
+import DropDown from "./Dropdown";
+
+const minuts = [5, 10, 15, 20, 25, 30];
+const languages = ["English", "Spanish", "French"];
 
 const Settings = () => {
   const router = useRouter();
@@ -70,19 +74,15 @@ const Settings = () => {
         icon={true}
         height="323px"
       />
-      <SettingsButton
-        name1="Duration"
-        name2="25 Min"
+      <DropDown height="390px" icon={true} minuts={minuts} name1="Duration" />
+      <DropDown height="454px" icon={true} minuts={minuts} name1="Pause" />
+      <DropDown
+        height="518px"
         icon={true}
-        height="391px"
-      />
-      <SettingsButton name1="Pause" name2="10 Min" icon={true} height="454px" />
-      <SettingsButton
+        languages={languages}
         name1="Language"
-        name2="English"
-        icon={true}
-        height="519px"
       />
+
       <button
         onClick={() => router.push("/worktime-page")}
         style={{
